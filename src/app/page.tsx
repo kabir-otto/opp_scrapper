@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Sidebar } from '../components/Sidebar/index';
 import { OpportunityGrid } from '../components/OpportunityGrid/index';
-import { Filters, Opportunity, OpportunitiesData, Source } from '@/lib/types';
+import { Filters, OpportunitiesData, Source } from '@/lib/types';
 import sampleData from '../data/opportunities.json';
 
 // Sample keywords - replace with actual keywords from your data
