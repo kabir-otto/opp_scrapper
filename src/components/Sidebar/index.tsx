@@ -4,16 +4,14 @@ import { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { DateFilter } from './DateFilter';
 import { SourceFilter } from './SourceFilter';
-import { KeywordFilter } from './KeywordFilter';
 import type { Filters } from '@/lib/types';
 
 interface SidebarProps {
     filters: Filters;
     onFiltersChange: (filters: Filters) => void;
-    keywords: string[];
 }
 
-export function Sidebar({ filters, onFiltersChange, keywords }: SidebarProps) {
+export function Sidebar({ filters, onFiltersChange }: SidebarProps) {
     const [isCollapsed, setIsCollapsed] = useState(false);
 
     return (
@@ -42,7 +40,6 @@ export function Sidebar({ filters, onFiltersChange, keywords }: SidebarProps) {
                     sources={filters.sources}
                     onChange={(sources) => onFiltersChange({ ...filters, sources })}
                 />
-               
             </div>
         </div>
     );

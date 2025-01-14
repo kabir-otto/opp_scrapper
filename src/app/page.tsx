@@ -56,7 +56,6 @@ export default function Home() {
             <Sidebar
                 filters={filters}
                 onFiltersChange={setFilters}
-                keywords={SAMPLE_KEYWORDS}
             />
             
             {/* Main Content */}
